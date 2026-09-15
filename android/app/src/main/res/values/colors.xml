@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Navy (#06142E). Used for the launch window so the cold-start
+         moment is branded rather than a white flash. -->
+    <color name="brand_navy">#FF06142E</color>
+	<color name="ic_launcher_background">#06142E</color>
+</resources>

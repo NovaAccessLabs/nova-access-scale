@@ -1,0 +1,71 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Secrets / local credentials — never commit (important for a public repo).
+# android/.gitignore also covers keystores under android/; these repeat the
+# rules repo-wide so a stray key outside that directory can't slip through.
+*.env
+.env*
+*.pem
+*.p12
+*.jks
+*.keystore
+key.properties
+*.mobileprovision
+*.cer
+
+# Marketing assets and user manual live in Google Drive, not the repo.
+/marketing/
+
+# Internal specs, principles, protocol notes, and marketing/store working
+# files — local working docs, not part of the public repo. A few curated
+# screenshots for the README live in /screenshots/ instead, outside this.
+/docs/
+
+# Claude Code project instructions and local settings — not committed.
+CLAUDE.md
+.claude/
+.DS_Store

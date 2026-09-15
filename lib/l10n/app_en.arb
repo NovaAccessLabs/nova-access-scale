@@ -1,0 +1,174 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "NovaAccessScale",
+  "@appTitle": { "description": "Application name." },
+
+  "cancel": "Cancel",
+  "save": "Save",
+  "delete": "Delete",
+  "close": "Close",
+
+  "gramsUnit": "g",
+  "@gramsUnit": { "description": "Short unit suffix for grams shown next to a number." },
+
+  "connectTitle": "Connect to scale",
+  "connectInstruction": "Connect your scale to begin.",
+  "scanForScales": "Scan for scales",
+  "scanning": "Scanning…",
+  "stopScanning": "Stop scanning",
+  "noScalesFound": "No scales found yet.",
+  "availableScales": "Available scales",
+  "@availableScales": { "description": "Semantic heading for the list of discovered scales." },
+  "connectToDevice": "Connect to {deviceName}",
+  "@connectToDevice": {
+    "description": "Button label to connect to a specific discovered scale.",
+    "placeholders": { "deviceName": { "type": "String", "example": "MY_SCALE" } }
+  },
+  "connecting": "Connecting…",
+  "connectionFailed": "Could not connect. Please try again.",
+  "bluetoothOff": "Bluetooth is off. Turn it on to find your scale.",
+  "permissionNeeded": "Bluetooth permission is needed to find your scale.",
+  "demoScaleName": "Demo scale",
+  "@demoScaleName": { "description": "Display name for the simulated scale used in demo mode." },
+
+  "homeTitle": "Weight",
+  "currentWeightLabel": "Current weight",
+  "liveWeight": "{weight} grams",
+  "@liveWeight": {
+    "description": "Spoken/semantic form of the live weight reading.",
+    "placeholders": { "weight": { "type": "String", "example": "12.3" } }
+  },
+  "noTargetSet": "No target set",
+  "tare": "Tare",
+  "tareHint": "Reset the scale to zero",
+  "setTarget": "Set target",
+  "choosePreset": "Choose preset",
+  "startLastTarget": "Start last target",
+
+  "setTargetTitle": "Set target weight",
+  "decreaseByGrams": "{count, plural, =1{Decrease by 1 gram} other{Decrease by {count} grams}}",
+  "@decreaseByGrams": {
+    "description": "Accessibility label for the minus stepper buttons.",
+    "placeholders": { "count": { "type": "int", "example": "10" } }
+  },
+  "increaseByGrams": "{count, plural, =1{Increase by 1 gram} other{Increase by {count} grams}}",
+  "@increaseByGrams": {
+    "description": "Accessibility label for the plus stepper buttons.",
+    "placeholders": { "count": { "type": "int", "example": "10" } }
+  },
+  "targetValue": "{count, plural, =1{Target 1 gram} other{Target {count} grams}}",
+  "@targetValue": {
+    "description": "Semantic label announcing the current target value.",
+    "placeholders": { "count": { "type": "int", "example": "18" } }
+  },
+  "confirm": "Confirm",
+  "saveAsPreset": "Save as preset",
+
+  "presetsTitle": "Presets",
+  "addPreset": "Add preset",
+  "newPreset": "New preset",
+  "editPreset": "Edit preset",
+  "presetNameField": "Name",
+  "presetNameExample": "e.g. Flour",
+  "presetWeightField": "Target weight in grams",
+  "noPresets": "No presets yet. Add one to get started.",
+  "presetSummary": "{name}, {count, plural, =1{1 gram} other{{count} grams}}",
+  "@presetSummary": {
+    "description": "Semantic label for a preset list item.",
+    "placeholders": {
+      "name": { "type": "String", "example": "Flour" },
+      "count": { "type": "int", "example": "18" }
+    }
+  },
+  "selectPreset": "Select {name}",
+  "@selectPreset": {
+    "description": "Accessibility label to choose a preset.",
+    "placeholders": { "name": { "type": "String", "example": "Flour" } }
+  },
+  "deletePresetTitle": "Delete preset?",
+  "deletePresetMessage": "Delete the preset {name}?",
+  "@deletePresetMessage": {
+    "placeholders": { "name": { "type": "String", "example": "Flour" } }
+  },
+  "presetSaved": "Preset saved",
+  "presetNameRequired": "Please enter a name.",
+  "scalesFound": "{count, plural, =1{1 scale found} other{{count} scales found}}",
+  "@scalesFound": {
+    "description": "Screen-reader announcement when a scan turns up scales; the list appearing is otherwise silent.",
+    "placeholders": { "count": { "type": "int", "example": "2" } }
+  },
+  "renamePresetNamed": "Rename {name}",
+  "@renamePresetNamed": {
+    "description": "Accessible label for the rename button on a preset row. Names the preset so rows are distinguishable.",
+    "placeholders": { "name": { "type": "String", "example": "Flour" } }
+  },
+  "deletePresetNamed": "Delete {name}",
+  "@deletePresetNamed": {
+    "placeholders": { "name": { "type": "String", "example": "Flour" } }
+  },
+
+  "settingsTitle": "Settings",
+  "feedbackSectionTitle": "Feedback",
+  "feedbackModeAudio": "Sound",
+  "feedbackModeVibration": "Vibration",
+  "feedbackModeAudioVibration": "Sound and vibration",
+  "speechEnabled": "Spoken announcements",
+  "speechEnabledDescription": "Speak the grams remaining when you pause adding weight.",
+  "speechOutput": "Speech output",
+  "@speechOutput": {"description": "Setting group choosing which voice speaks announcements: the user's screen reader or the app's own voice. Only shown while a screen reader is active."},
+  "speechOutputScreenReader": "Screen reader voice",
+  "@speechOutputScreenReader": {"description": "Speech output option: announce through the screen reader (TalkBack) when one is running, otherwise use the app's own voice."},
+  "speechOutputAppVoice": "App voice",
+  "speechOutputDescription": "Screen reader keeps your own voice and speed, and reaches a braille display. The app's voice is used when no screen reader is running.",
+  "appearanceSectionTitle": "Appearance",
+  "highContrast": "High contrast",
+  "highContrastDescription": "White on black in dark mode, black on yellow in light mode.",
+  "connectionSectionTitle": "Connection",
+  "autoReconnect": "Reconnect automatically",
+  "autoReconnectDescription": "Reconnect to the last scale when the app opens.",
+  "demoMode": "Demo mode",
+  "demoModeDescription": "Use a simulated scale, no hardware required.",
+
+  "announceRemaining": "{value} grams remaining",
+  "@announceRemaining": {
+    "description": "Spoken announcement of grams left to reach the target (0.1 g).",
+    "placeholders": { "value": { "type": "String", "example": "5.0" } }
+  },
+  "announceTargetReached": "Target reached",
+  "announceOverTarget": "Over target by {value} grams",
+  "@announceOverTarget": {
+    "description": "Spoken announcement when above the target (0.1 g).",
+    "placeholders": { "value": { "type": "String", "example": "3.0" } }
+  },
+
+  "statusTargetReached": "Target reached",
+  "statusOverTarget": "Over target by {value} grams",
+  "@statusOverTarget": {
+    "placeholders": { "value": { "type": "String", "example": "3.0" } }
+  },
+  "statusRemaining": "{value} grams remaining",
+  "@statusRemaining": {
+    "placeholders": { "value": { "type": "String", "example": "5.0" } }
+  },
+
+  "aboutTitle": "About",
+  "aboutBody": "NovaAccessScale reads your Bluetooth scale's weight aloud with sound, vibration, and speech, so you can weigh by ear. Announcements are spoken in grams when you pause adding weight.",
+  "@aboutBody": { "description": "Short description of the app shown in a note box on the Settings screen." },
+  "contactSectionTitle": "Contact",
+  "contactIntro": "Questions, feedback, or ideas? We would love to hear from you.",
+  "@contactIntro": { "description": "Intro line above the contact links." },
+  "contactEmailLabel": "Email",
+  "@contactEmailLabel": { "description": "Action label for the e-mail contact link (the address is shown as the subtitle)." },
+  "contactEmailHint": "Opens your email app",
+  "@contactEmailHint": { "description": "Screen-reader hint describing what the email link opens." },
+  "contactInstagramLabel": "Instagram",
+  "@contactInstagramLabel": { "description": "Action label for the Instagram link (the handle is shown as the subtitle)." },
+  "contactInstagramHint": "Opens Instagram",
+  "@contactInstagramHint": { "description": "Screen-reader hint describing what the Instagram link opens." },
+  "contactSupportLabel": "Support the app",
+  "@contactSupportLabel": { "description": "Action label for the Ko-fi support link (the handle is shown as the subtitle)." },
+  "contactSupportHint": "Opens Ko-fi in your browser",
+  "@contactSupportHint": { "description": "Screen-reader hint describing what the support link opens." },
+  "couldNotOpenLink": "Could not open the link."
+}

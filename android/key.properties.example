@@ -1,0 +1,15 @@
+# Release signing config for the Play Store build.
+#
+# Copy this file to `android/key.properties` (which is gitignored — never commit
+# it or the keystore) and fill in the values from the keystore you created.
+#
+#   cp android/key.properties.example android/key.properties
+#
+# storeFile is resolved relative to android/app/, so an absolute path is safest.
+# Keep the .jks file out of the repo (it's gitignored, but prefer storing it
+# somewhere private and backed up — losing it means you can never update the app).
+
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=upload
+storeFile=/absolute/path/to/your/upload-keystore.jks
