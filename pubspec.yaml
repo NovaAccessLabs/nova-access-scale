@@ -39,7 +39,7 @@ dependencies:
   audioplayers: ^6.8.1
   flutter_localizations:
     sdk: flutter
-  intl: ^0.20.2
+  intl: ^0.20.3
   url_launcher: ^6.3.1
   universal_ble: ^2.2.0
 dev_dependencies:
